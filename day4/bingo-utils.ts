@@ -43,10 +43,6 @@ export const markCoincidences = (numbers: Array<string>, table: CubeArray) => {
         }
         let winner = assertWinner(table[j]);
         if (winner) {
-          console.log("-------------------------------------------");
-          console.log("table: ", table[i][j]);
-          console.log("number: ", numbers[h]);
-          console.log(calcScore(table[i]) * +numbers[h]);
           return;
         }
       }
